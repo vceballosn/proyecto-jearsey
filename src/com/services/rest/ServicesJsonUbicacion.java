@@ -44,7 +44,7 @@ public class ServicesJsonUbicacion {
 	
 
 	@GET
-    @Path("/eliminar/{id}")
+    @Path("")
     @Produces(MediaType.APPLICATION_JSON)
     public Ubicacion eliminarUbicacion( @PathParam("id") long id ) {
 		RepositorioUbicacion repositorioUbicacion = new RepositorioUbicacion();

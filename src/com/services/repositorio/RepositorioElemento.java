@@ -50,7 +50,7 @@ public class RepositorioElemento {
 	@SuppressWarnings("unchecked")
 	public List<Elemento> listarTodos(){
 		em.getTransaction().begin();
-		Query consulta = em.createQuery("select elemento from Elemento elemento");
+		Query consulta = em.createQuery("select elemento from Elemento elemento,TipoElemento tipoElemento where tipoElemento.idTipoElemento = elemento.idTipoElemento");
 		List<Elemento> cursos = consulta.getResultList();
 		emf.close();
 		return cursos;
@@ -60,7 +60,7 @@ public class RepositorioElemento {
 	 * Buscar por id
 	 */
 	
-	public Elemento objetoId(long id){
+	public Elemento objetoId(int id){
 		em.getTransaction().begin();
 		Elemento elementos = em.find(Elemento.class, id);
 		em.getTransaction().commit();

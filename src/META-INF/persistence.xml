@@ -8,9 +8,13 @@
 		<class>com.services.modelo.Destino</class>
 		<class>com.services.modelo.Filtro</class>
 		<class>com.services.modelo.TipoFiltro</class>
+		<class>com.services.modelo.Curso</class>
+		<class>com.services.modelo.Ubicacion</class>
+		<class>com.services.modelo.Elemento</class>
+		<class>com.services.modelo.TipoElemento</class>
        <properties>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>
-            <property name="hibernate.connection.url" value="jdbc:sqlserver://localhost:1433;databaseName=gestor_infonavit2;instanceName=SQLEXPRESS;"/>
+           <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>
+            <property name="hibernate.connection.url" value="jdbc:sqlserver://10.90.8.87:1433/TallerNuevo"/>
             <property name="hibernate.connection.driver_class" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
             <property name="hibernate.connection.username" value="sa"/>
             <property name="hibernate.connection.password" value="V1s10n4r12018"/>

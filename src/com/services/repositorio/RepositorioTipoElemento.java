@@ -51,7 +51,7 @@ public class RepositorioTipoElemento {
 	@SuppressWarnings("unchecked")
 	public List<TipoElemento> listarTodos(){
 		em.getTransaction().begin();
-		Query consulta = em.createQuery("select curso from Curso curso");
+		Query consulta = em.createQuery("select tipoElemento  from TipoElemento tipoElemento");
 		List<TipoElemento> tipoElementos = consulta.getResultList();
 		emf.close();
 		return tipoElementos;
